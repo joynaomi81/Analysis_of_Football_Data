@@ -9,7 +9,7 @@ st.title("Analysis of Football Data")
 @st.cache  # Cache the data loading for better performance
 def load_data():
     # Replace this with the path to your dataset
-    df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/players_fifa22.csv")  
+    df = pd.read_csv("players_fifa22.csv")  
     return df
 
 # Load data
