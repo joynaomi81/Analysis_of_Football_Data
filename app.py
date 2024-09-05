@@ -17,11 +17,11 @@ data = load_data()
 
 # Sidebar for user input
 st.sidebar.header("User Input Features")
-team_selected = st.sidebar.selectbox('Select a team:', data['Team'].unique())
+team_selected = st.sidebar.selectbox('Select a team:', data['NationalTeam'].unique())
 position_selected = st.sidebar.selectbox('Select a position:', data['Position'].unique())
 
 # Filter data based on user selection
-filtered_data = data[(data['Team'] == team_selected) & (data['Position'] == position_selected)]
+filtered_data = data[(data['NationalTeam'] == team_selected) & (data['Position'] == position_selected)]
 
 # Display the filtered data
 st.write(f"Showing players from {team_selected} playing as {position_selected}")
